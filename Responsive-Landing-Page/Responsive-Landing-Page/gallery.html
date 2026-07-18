@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Studio Lumen</title>
+<meta name="description" content="Browse finished residential, commercial and interior design projects by Studio Lumen.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Studio Lumen logo">
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Project Gallery</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Recent Work</span>
+        <h2 class="section-title">Finished spaces, from concept to handover</h2>
+        <p class="section-subtitle">A selection of residential and commercial projects completed across Hyderabad.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-zoom">
+          <img src="images/gallery1.jpg" alt="Living room interior design" loading="lazy">
+          <div class="gallery-overlay"><h4>Jubilee Hills Residence — Living Room</h4></div>
+        </div>
+        <div class="gallery-item reveal-zoom">
+          <img src="images/gallery2.jpg" alt="Penthouse interior design" loading="lazy">
+          <div class="gallery-overlay"><h4>Banjara Hills Penthouse</h4></div>
+        </div>
+        <div class="gallery-item reveal-zoom">
+          <img src="images/gallery3.jpg" alt="Office lobby interior design" loading="lazy">
+          <div class="gallery-overlay"><h4>HITEC City Office Lobby</h4></div>
+        </div>
+        <div class="gallery-item reveal-zoom">
+          <img src="images/gallery4.jpg" alt="Courtyard architecture design" loading="lazy">
+          <div class="gallery-overlay"><h4>Shamirpet Villa Courtyard</h4></div>
+        </div>
+        <div class="gallery-item reveal-zoom">
+          <img src="images/gallery5.jpg" alt="Cafe interior fit-out" loading="lazy">
+          <div class="gallery-overlay"><h4>Gachibowli Cafe Fit-out</h4></div>
+        </div>
+        <div class="gallery-item reveal-zoom">
+          <img src="images/gallery6.jpg" alt="Rooftop lounge design" loading="lazy">
+          <div class="gallery-overlay"><h4>Madhapur Rooftop Lounge</h4></div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:52px;" class="reveal">
+        <p class="section-subtitle" style="margin: 0 auto 24px;">Like what you see? Let's talk about your space.</p>
+        <a href="contact.html" class="btn btn-primary">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Studio Lumen logo">
+        <p>An architecture and interior design studio in Hyderabad, designing spaces around light, material and the way people actually live.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Residential Design</a></li>
+          <li><a href="services.html">Commercial Spaces</a></li>
+          <li><a href="services.html">Interior Styling</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.9rem; margin-bottom:16px;">Occasional notes on new projects and studio openings — no spam.</p>
+        <a href="contact.html" class="btn btn-primary" style="padding:10px 22px; font-size:0.85rem;">Subscribe</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Studio Lumen. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

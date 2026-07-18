@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Studio Lumen</title>
+<meta name="description" content="Get in touch with Studio Lumen to discuss your residential, commercial or interior design project.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Studio Lumen logo">
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Tell us about your project</h2>
+        <p class="section-subtitle">Share a few details and our team will get back to you within one business day.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card reveal-left">
+          <h3>Contact Information</h3>
+          <p>Prefer to talk directly? Reach out through any of the channels below.</p>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><strong>Studio Address</strong><span>Road No. 12, Banjara Hills, Hyderabad, Telangana 500034</span></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div><strong>Phone</strong><span>+91 98765 43210</span></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><strong>Email</strong><span>hello@studiolumen.example</span></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div><strong>Studio Hours</strong><span>Mon – Sat, 10:00 AM – 7:00 PM</span></div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Thank you! Your message has been sent — we'll be in touch shortly.</span>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <span class="error-message"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your space and timeline..."></textarea>
+              <span class="error-message"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" style="padding-top:0;">
+    <div class="container">
+      <div class="about-image-wrap reveal" style="border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-md);">
+        <img src="images/gallery3.jpg" alt="Map placeholder showing studio location in Banjara Hills, Hyderabad" loading="lazy" style="height:340px; width:100%; object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Studio Lumen logo">
+        <p>An architecture and interior design studio in Hyderabad, designing spaces around light, material and the way people actually live.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Residential Design</a></li>
+          <li><a href="services.html">Commercial Spaces</a></li>
+          <li><a href="services.html">Interior Styling</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.9rem; margin-bottom:16px;">Occasional notes on new projects and studio openings — no spam.</p>
+        <a href="contact.html" class="btn btn-primary" style="padding:10px 22px; font-size:0.85rem;">Subscribe</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Studio Lumen. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

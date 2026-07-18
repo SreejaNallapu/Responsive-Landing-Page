@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Animations
+   All motion effects live here: keyframes + reveal-on-scroll states.
+   ========================================================================== */
+
+/* -------------------- Reveal on scroll (driven by scroll.js adding .in-view) -------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-zoom.in-view {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(48px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger children utility: add [data-stagger] to a container, children get delays via JS-set --d var, fallback nth-child */
+.reveal[data-stagger] {
+  transition-delay: var(--d, 0s);
+}
+
+/* -------------------- Hero entrance sequence -------------------- */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow {
+  animation: fade-up 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s both;
+}
+
+.hero h1 {
+  animation: fade-up 0.8s cubic-bezier(0.16,1,0.3,1) 0.25s both;
+}
+
+.hero p {
+  animation: fade-up 0.8s cubic-bezier(0.16,1,0.3,1) 0.4s both;
+}
+
+.hero-actions {
+  animation: fade-up 0.8s cubic-bezier(0.16,1,0.3,1) 0.55s both;
+}
+
+.hero-stats {
+  animation: fade-up 0.8s cubic-bezier(0.16,1,0.3,1) 0.7s both;
+}
+
+/* -------------------- Scroll cue -------------------- */
+@keyframes scroll-line {
+  0%   { top: -100%; }
+  50%  { top: 0%; }
+  100% { top: 100%; }
+}
+
+/* -------------------- Button ripple -------------------- */
+@keyframes ripple-anim {
+  to {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+/* -------------------- Card float / lift already handled via transform transitions in style.css -------------------- */
+
+/* -------------------- Loading page fade-in -------------------- */
+@keyframes page-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body {
+  animation: page-fade-in 0.5s ease;
+}
+
+/* -------------------- Logo pulse on hover -------------------- */
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+.nav-logo:hover img {
+  animation: soft-pulse 0.6s ease;
+}
+
+/* -------------------- Reduced motion support -------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal, .reveal-zoom, .reveal-left, .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
